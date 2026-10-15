@@ -1,0 +1,11 @@
+/**
+ * Time spent in one pipeline stage, across the POCs that have moved on from it.
+ */
+type Poc.StageVelocity {
+
+  stage: !string enum('IDEA', 'PROTOTYPE', 'SHOWN', 'ADOPTED')
+
+  pocCount: !int
+
+  avgDays: !double
+}

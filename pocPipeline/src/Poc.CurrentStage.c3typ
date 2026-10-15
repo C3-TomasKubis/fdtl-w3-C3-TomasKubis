@@ -1,0 +1,13 @@
+/**
+ * The stage a POC is in now, derived from its latest {@link StatusChange}.
+ */
+type Poc.CurrentStage {
+
+  poc: !Poc
+
+  stage: !string enum('IDEA', 'PROTOTYPE', 'SHOWN', 'ADOPTED')
+
+  since: !datetime
+
+  daysInStage: !double
+}

@@ -1,0 +1,20 @@
+/**
+ * A C3 Code app demo or proof of concept moving through the pipeline. The current stage is not stored:
+ * it is the stage of the POC's most recent {@link StatusChange}.
+ */
+entity type Poc schema name 'POC' {
+
+  title: !string
+
+  customer: string
+
+  owner: string
+
+  /**
+   * For each stage, how many POCs have moved on from it and the average days they spent in it.
+   * Assumes POCs only move forward through the stages.
+   */
+  stageVelocity: function(): [Poc.StageVelocity] js-server
+
+  currentStages: function(): [Poc.CurrentStage] js-server
+}

@@ -1,0 +1,14 @@
+/**
+ * One move of a {@link Poc} into a pipeline stage. Changes are only ever added, never edited, so the
+ * full history of every POC stays queryable.
+ */
+entity type StatusChange schema name 'STATUS_CHANGE' {
+
+  poc: !Poc
+
+  stage: !string enum('IDEA', 'PROTOTYPE', 'SHOWN', 'ADOPTED')
+
+  changedOn: !datetime
+
+  note: string
+}
