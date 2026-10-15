@@ -1,7 +1,7 @@
 {
-  "author": "{{author}}",
+  "author": "Tomas Kubis",
   "name": "pocPipeline",
-  "description": "{{description}}",
+  "description": "Tracks C3 Code app demos and POCs through the pipeline and shows which stage they spend longest in",
   "dependencies": {},
   "version": "1.0.0"
 }
