@@ -20,12 +20,12 @@ import { NavigationItem } from '@/types/navigation';
  */
 export const navigationConfig: NavigationItem[] = [
   {
-    id: 'demo',
+    id: 'pipeline',
     path: '/',
     icon: House,
     iconActive: House,
-    label: 'Demo',
-    tooltip: 'Dashboard Overview',
+    label: 'Pipeline',
+    tooltip: 'POC pipeline',
   },
 
   /*

@@ -65,3 +65,32 @@ export interface DocumentTemplate {
   description: string;
   estimatedTime: string;
 }
+
+export type Stage = 'IDEA' | 'PROTOTYPE' | 'SHOWN' | 'ADOPTED';
+
+export interface Poc {
+  id: string;
+  title: string;
+  customer?: string;
+  owner?: string;
+}
+
+export interface StatusChange {
+  id: string;
+  stage: Stage;
+  changedOn: string;
+  note?: string;
+}
+
+export interface StageVelocity {
+  stage: Stage;
+  pocCount: number;
+  avgDays: number;
+}
+
+export interface CurrentStage {
+  poc: Poc;
+  stage: Stage;
+  since: string;
+  daysInStage: number;
+}
