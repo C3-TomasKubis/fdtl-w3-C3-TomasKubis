@@ -19,7 +19,3 @@ export interface NavigationItem {
   badge?: number;
   disabled?: boolean;
 }
-
-export interface NavigationConfig {
-  items: NavigationItem[];
-}

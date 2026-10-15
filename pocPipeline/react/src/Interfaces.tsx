@@ -7,8 +7,6 @@
  * This material may be covered by one or more patents or pending patent applications.
  */
 
-import { ReactElement } from 'react';
-
 export interface User {
   id: string;
   name: string;
@@ -21,13 +19,6 @@ export interface UserGroup {
   id: string;
   name: string;
   description: string;
-}
-
-export interface SnackbarMessage {
-  message: ReactElement;
-  key: number;
-  severity?: 'success' | 'info' | 'warning' | 'error';
-  error?: boolean;
 }
 
 /** Sample / API document row (examples + fetchDocuments). */

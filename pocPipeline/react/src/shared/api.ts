@@ -7,7 +7,7 @@
  * This material may be covered by one or more patents or pending patent applications.
  */
 
-import { CurrentStage, StageVelocity, StatusChange, User, UserGroup } from '../Interfaces';
+import { CurrentStage, StageVelocity, StatusChange } from '../Interfaces';
 import { c3Action } from '../c3Action';
 
 export const fetchCurrentStages = async (): Promise<CurrentStage[]> => {
@@ -22,15 +22,5 @@ export const fetchStatusChanges = async (pocId: string): Promise<StatusChange[]>
   const response = await c3Action('StatusChange', 'fetch', [
     { filter: `poc.id == "${pocId}"`, order: 'ascending(changedOn)', limit: -1 },
   ]);
-  return response.objs;
-};
-
-export const fetchUsers = async (): Promise<User[]> => {
-  const response = await c3Action('User', 'fetch', [{ limit: -1 }]);
-  return response.objs;
-};
-
-export const fetchUserGroups = async (): Promise<UserGroup[]> => {
-  const response = await c3Action('UserGroup', 'fetch', [{ limit: -1 }]);
   return response.objs;
 };

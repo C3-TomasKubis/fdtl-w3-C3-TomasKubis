@@ -27,43 +27,4 @@ export const navigationConfig: NavigationItem[] = [
     label: 'Pipeline',
     tooltip: 'POC pipeline',
   },
-
-  /*
-   * Example new navigation item - delete this comment and the lines below to add a new navigation item
-   * {
-   *   id: 'analytics',
-   *   path: '/analytics',
-   *   icon: faChartBarRegular,
-   *   iconActive: faChartBarSolid,
-   *   label: 'Analytics',
-   *   tooltip: 'View Analytics & Reports'
-   * },
-   */
 ];
-
-/**
- * Helper function to add navigation item dynamically
- */
-export const addNavigationItem = (item: NavigationItem) => {
-  navigationConfig.push(item);
-};
-
-/**
- * Helper function to remove navigation item
- */
-export const removeNavigationItem = (id: string) => {
-  const index = navigationConfig.findIndex((item) => item.id === id);
-  if (index > -1) {
-    navigationConfig.splice(index, 1);
-  }
-};
-
-/**
- * Helper function to update badge count
- */
-export const updateNavigationBadge = (id: string, badge?: number) => {
-  const item = navigationConfig.find((item) => item.id === id);
-  if (item) {
-    item.badge = badge;
-  }
-};
