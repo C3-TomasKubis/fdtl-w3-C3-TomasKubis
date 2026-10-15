@@ -1,0 +1,12 @@
+[
+  { "id": "seed_poc_asset_health", "title": "Asset health triage assistant", "customer": "Northwind Energy", "owner": "Tomas Kubis" },
+  { "id": "seed_poc_invoice_match", "title": "Invoice matching agent", "customer": "Contoso Manufacturing", "owner": "Priya Shah" },
+  { "id": "seed_poc_supplier_risk", "title": "Supplier risk dashboard", "customer": "Fabrikam Chemicals", "owner": "Tomas Kubis" },
+  { "id": "seed_poc_maintenance_planner", "title": "Maintenance work order planner", "customer": "Northwind Energy", "owner": "Marek Novak" },
+  { "id": "seed_poc_contract_qa", "title": "Contract Q&A over SharePoint", "customer": "Tailspin Logistics", "owner": "Priya Shah" },
+  { "id": "seed_poc_demand_sensing", "title": "Demand sensing what-if app", "customer": "Contoso Manufacturing", "owner": "Tomas Kubis" },
+  { "id": "seed_poc_field_notes", "title": "Field technician notes summarizer", "customer": "Fabrikam Chemicals", "owner": "Marek Novak" },
+  { "id": "seed_poc_energy_forecast", "title": "Site energy forecast explorer", "customer": "Tailspin Logistics", "owner": "Tomas Kubis" },
+  { "id": "seed_poc_safety_incident", "title": "Safety incident classifier", "customer": "Northwind Energy", "owner": "Priya Shah" },
+  { "id": "seed_poc_onboarding_copilot", "title": "Customer onboarding copilot", "customer": "Contoso Manufacturing", "owner": "Marek Novak" }
+]

@@ -1,0 +1,38 @@
+[
+  { "id": "seed_statuschange_asset_health_idea", "poc": { "id": "seed_poc_asset_health" }, "stage": "IDEA", "changedOn": "2026-06-01T09:00:00Z", "note": "Reliability team asked for faster alert triage" },
+  { "id": "seed_statuschange_asset_health_prototype", "poc": { "id": "seed_poc_asset_health" }, "stage": "PROTOTYPE", "changedOn": "2026-06-05T09:00:00Z", "note": "Built on sample turbine alerts" },
+  { "id": "seed_statuschange_asset_health_shown", "poc": { "id": "seed_poc_asset_health" }, "stage": "SHOWN", "changedOn": "2026-06-15T09:00:00Z", "note": "Demoed to the reliability lead" },
+  { "id": "seed_statuschange_asset_health_adopted", "poc": { "id": "seed_poc_asset_health" }, "stage": "ADOPTED", "changedOn": "2026-07-27T09:00:00Z", "note": "Approved after security review" },
+
+  { "id": "seed_statuschange_invoice_match_idea", "poc": { "id": "seed_poc_invoice_match" }, "stage": "IDEA", "changedOn": "2026-06-10T09:00:00Z", "note": "Finance spends two days a month on manual matching" },
+  { "id": "seed_statuschange_invoice_match_prototype", "poc": { "id": "seed_poc_invoice_match" }, "stage": "PROTOTYPE", "changedOn": "2026-06-17T09:00:00Z", "note": "Matching on PO number and amount" },
+  { "id": "seed_statuschange_invoice_match_shown", "poc": { "id": "seed_poc_invoice_match" }, "stage": "SHOWN", "changedOn": "2026-06-29T09:00:00Z", "note": "Shown to the AP team" },
+  { "id": "seed_statuschange_invoice_match_adopted", "poc": { "id": "seed_poc_invoice_match" }, "stage": "ADOPTED", "changedOn": "2026-08-03T09:00:00Z", "note": "Live for one business unit" },
+
+  { "id": "seed_statuschange_supplier_risk_idea", "poc": { "id": "seed_poc_supplier_risk" }, "stage": "IDEA", "changedOn": "2026-06-22T09:00:00Z", "note": "Procurement wants one view of supplier risk" },
+  { "id": "seed_statuschange_supplier_risk_prototype", "poc": { "id": "seed_poc_supplier_risk" }, "stage": "PROTOTYPE", "changedOn": "2026-06-25T09:00:00Z", "note": "Scored suppliers from public filings" },
+  { "id": "seed_statuschange_supplier_risk_shown", "poc": { "id": "seed_poc_supplier_risk" }, "stage": "SHOWN", "changedOn": "2026-07-09T09:00:00Z", "note": "Shown to the CPO staff meeting" },
+  { "id": "seed_statuschange_supplier_risk_adopted", "poc": { "id": "seed_poc_supplier_risk" }, "stage": "ADOPTED", "changedOn": "2026-08-27T09:00:00Z", "note": "Waited on data sharing agreement" },
+
+  { "id": "seed_statuschange_maintenance_planner_idea", "poc": { "id": "seed_poc_maintenance_planner" }, "stage": "IDEA", "changedOn": "2026-07-06T09:00:00Z", "note": "Planners schedule work orders in spreadsheets" },
+  { "id": "seed_statuschange_maintenance_planner_prototype", "poc": { "id": "seed_poc_maintenance_planner" }, "stage": "PROTOTYPE", "changedOn": "2026-07-11T09:00:00Z", "note": "Greedy scheduler over one site" },
+  { "id": "seed_statuschange_maintenance_planner_shown", "poc": { "id": "seed_poc_maintenance_planner" }, "stage": "SHOWN", "changedOn": "2026-07-20T09:00:00Z", "note": "Shown to two site planners" },
+
+  { "id": "seed_statuschange_contract_qa_idea", "poc": { "id": "seed_poc_contract_qa" }, "stage": "IDEA", "changedOn": "2026-07-20T09:00:00Z", "note": "Legal asked for answers with clause citations" },
+  { "id": "seed_statuschange_contract_qa_prototype", "poc": { "id": "seed_poc_contract_qa" }, "stage": "PROTOTYPE", "changedOn": "2026-07-26T09:00:00Z", "note": "Indexed 40 sample contracts" },
+  { "id": "seed_statuschange_contract_qa_shown", "poc": { "id": "seed_poc_contract_qa" }, "stage": "SHOWN", "changedOn": "2026-08-10T09:00:00Z", "note": "Demoed to legal ops" },
+
+  { "id": "seed_statuschange_demand_sensing_idea", "poc": { "id": "seed_poc_demand_sensing" }, "stage": "IDEA", "changedOn": "2026-08-03T09:00:00Z", "note": "Planners want to test promotion scenarios" },
+  { "id": "seed_statuschange_demand_sensing_prototype", "poc": { "id": "seed_poc_demand_sensing" }, "stage": "PROTOTYPE", "changedOn": "2026-08-05T09:00:00Z", "note": "Reused the forecasting demo model" },
+  { "id": "seed_statuschange_demand_sensing_shown", "poc": { "id": "seed_poc_demand_sensing" }, "stage": "SHOWN", "changedOn": "2026-08-17T09:00:00Z", "note": "Shown to the S&OP lead" },
+
+  { "id": "seed_statuschange_field_notes_idea", "poc": { "id": "seed_poc_field_notes" }, "stage": "IDEA", "changedOn": "2026-08-24T09:00:00Z", "note": "Technician notes are free text nobody reads" },
+  { "id": "seed_statuschange_field_notes_prototype", "poc": { "id": "seed_poc_field_notes" }, "stage": "PROTOTYPE", "changedOn": "2026-08-31T09:00:00Z", "note": "Summaries per asset per week" },
+
+  { "id": "seed_statuschange_energy_forecast_idea", "poc": { "id": "seed_poc_energy_forecast" }, "stage": "IDEA", "changedOn": "2026-09-07T09:00:00Z", "note": "Facilities want next-month energy use per site" },
+  { "id": "seed_statuschange_energy_forecast_prototype", "poc": { "id": "seed_poc_energy_forecast" }, "stage": "PROTOTYPE", "changedOn": "2026-09-11T09:00:00Z", "note": "Meter data for three warehouses" },
+
+  { "id": "seed_statuschange_safety_incident_idea", "poc": { "id": "seed_poc_safety_incident" }, "stage": "IDEA", "changedOn": "2026-09-28T09:00:00Z", "note": "HSE team tags incidents by hand" },
+
+  { "id": "seed_statuschange_onboarding_copilot_idea", "poc": { "id": "seed_poc_onboarding_copilot" }, "stage": "IDEA", "changedOn": "2026-10-05T09:00:00Z", "note": "New customer admins ask the same setup questions" }
+]
