@@ -1,0 +1,7 @@
+{
+  "author": "{{author}}",
+  "name": "pocPipeline",
+  "description": "{{description}}",
+  "dependencies": {},
+  "version": "1.0.0"
+}
