@@ -10,7 +10,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import SideNav from './components/SideNav/SideNav';
-import ErrorReporterProvider from './components/ErrorBoundary/ErrorBoundary';
 import PipelinePage from './pages/PipelinePage/PipelinePage';
 
 if (import.meta.env.MODE === 'development') {
@@ -20,17 +19,15 @@ if (import.meta.env.MODE === 'development') {
 
 export default function App() {
   return (
-    <ErrorReporterProvider>
-      <div className="h-screen flex max-w-full overflow-hidden">
-        <SideNav />
-        <div className="flex-1 flex flex-col min-w-0">
-          <main className="flex-1 overflow-auto">
-            <Routes>
-              <Route path="/" element={<PipelinePage />} />
-            </Routes>
-          </main>
-        </div>
+    <div className="h-screen flex max-w-full overflow-hidden">
+      <SideNav />
+      <div className="flex-1 flex flex-col min-w-0">
+        <main className="flex-1 overflow-auto">
+          <Routes>
+            <Route path="/" element={<PipelinePage />} />
+          </Routes>
+        </main>
       </div>
-    </ErrorReporterProvider>
+    </div>
   );
 }
