@@ -55,7 +55,7 @@ const _doAxiosPost = async (url: string, payload: any): Promise<any> => {
     } else {
       throw error.message;
     }
-  };
+  }
 };
 
 /**
