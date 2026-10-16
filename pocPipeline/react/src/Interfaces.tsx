@@ -7,56 +7,6 @@
  * This material may be covered by one or more patents or pending patent applications.
  */
 
-export interface User {
-  id: string;
-  name: string;
-  email: string;
-  lastName: string;
-  firstName: string;
-}
-
-export interface UserGroup {
-  id: string;
-  name: string;
-  description: string;
-}
-
-/** Sample / API document row (examples + fetchDocuments). */
-export interface Document {
-  documentName: string;
-  program: string;
-  owner: string;
-  checklistApplied: string;
-  attachments: number;
-  uploadedBy: string;
-  uploadedAt: string;
-}
-
-export interface ProgramDocument {
-  documentName: string;
-  owner: string;
-  status: string;
-  uploadedAt: string;
-}
-
-/** Program row with optional nested documents (examples + fetchPrograms). */
-export interface Program {
-  id: string;
-  program: string;
-  totalDocuments: number;
-  passed: number;
-  failed: number;
-  pending: number;
-  documents?: ProgramDocument[];
-}
-
-export interface DocumentTemplate {
-  id: string;
-  name: string;
-  description: string;
-  estimatedTime: string;
-}
-
 export type Stage = 'IDEA' | 'PROTOTYPE' | 'SHOWN' | 'ADOPTED';
 
 export interface Poc {
