@@ -18,7 +18,6 @@ const STORAGE_KEY = 'ui-theme';
 
 /**
  * Theme hook: toggles `dark` on <html> and persists preference.
- * Styling uses C3 tokens + shadcn CSS variables (no Kendo stylesheets).
  */
 export const useTheme = (): { currentTheme: ThemeType; toggleTheme: () => void } => {
   const [currentTheme, setCurrentTheme] = useState<ThemeType>('light');
