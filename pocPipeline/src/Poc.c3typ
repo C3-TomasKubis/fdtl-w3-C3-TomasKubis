@@ -1,6 +1,6 @@
 /**
  * A C3 Code app demo or proof of concept moving through the pipeline. The current stage is not stored:
- * it is the stage of the POC's most recent {@link StatusChange}.
+ * it is the latest stage the POC entered, from its {@link StatusChange}s. POCs are assumed to only move forward.
  */
 entity type Poc schema name 'POC' {
 
