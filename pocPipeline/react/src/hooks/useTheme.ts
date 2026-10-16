@@ -7,9 +7,6 @@
  * This material may be covered by one or more patents or pending patent applications.
  */
 
-/*
- * Copyright 2009-2026 C3 AI (www.c3.ai). All Rights Reserved.
- */
 import { useEffect, useState } from 'react';
 
 export type ThemeType = 'light' | 'dark';
