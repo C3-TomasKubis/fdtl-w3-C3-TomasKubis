@@ -79,46 +79,4 @@ export async function c3Action(typeName: string, actionName: string, spec?: any)
   return _doAxiosPost(url, payload);
 }
 
-export async function c3GetAction(typeName: string, id: string, include: string = 'id'): Promise<any> {
-  return await c3MemberAction(typeName, 'get', { id }, include);
-}
-
-/**
- * The function that allows communication with c3server APIs using functions like create().
- * For calling APIs with arguments, action needs to be the function name and spec needs to be a list of arguments.
- * @param typeName The c3type to call
- * @param actionName The function to invoke
- * @param spec The arguments to the function
- * @returns The response from c3server
- */
-export async function c3CreateAction(typeName: string, actionName: string, spec: any): Promise<any> {
-  const appBaseUrl = getAppBaseUrl();
-  const url = `${appBaseUrl}/api/8/${typeName}/${actionName}`;
-  const payload = JSON.stringify([spec]);
-
-  return _doAxiosPost(url, payload);
-}
-
-/**
- * The function that allows communication with c3server APIs using member functions.
- * For calling APIs with arguments, action needs to be the member function name and spec needs
- * to be a list of arguments.
- * @param typeName The c3type to call
- * @param actionName The member function to invoke
- * @param instance The c3type instance to call
- * @param spec The arguments to the function
- * @returns The response from c3server
- */
-export async function c3MemberAction(typeName: string, actionName: string, instance: any, spec?: any): Promise<any> {
-  const appBaseUrl = getAppBaseUrl();
-  const url = `${appBaseUrl}/api/8/${typeName}/${actionName}`;
-  const payload = spec
-    ? Array.isArray(spec)
-      ? JSON.stringify([instance, ...spec])
-      : JSON.stringify([instance, spec])
-    : JSON.stringify([instance]);
-
-  return _doAxiosPost(url, payload);
-}
-
 export default c3Action;
