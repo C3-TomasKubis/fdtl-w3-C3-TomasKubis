@@ -7,7 +7,6 @@
  * This material may be covered by one or more patents or pending patent applications.
  */
 
-// eslint.config.cjs
 const js = require("@eslint/js");
 const globals = require("globals");
 const tseslint = require("@typescript-eslint/eslint-plugin");

@@ -89,10 +89,6 @@
   --radius-lg: calc(var(--radius) + 2px);
 }
 
-/* Import C3 Safelist - Ensures essential utilities are always included */
-
-/* @import './tailwind/c3Safelist.css'; */
-
 /*
   Base styles for the C3 Design System:
 

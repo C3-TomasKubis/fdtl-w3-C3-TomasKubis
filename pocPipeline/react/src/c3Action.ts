@@ -78,5 +78,3 @@ export async function c3Action(typeName: string, actionName: string, spec?: any)
 
   return _doAxiosPost(url, payload);
 }
-
-export default c3Action;
