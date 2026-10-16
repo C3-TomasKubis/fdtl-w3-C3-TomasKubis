@@ -25,7 +25,6 @@ export default defineConfig(({ mode }) => {
     plugins: [
       tailwindcss(),
       react(),
-      // Single eslint2 instance with valid options
       eslint({
         lintOnStart: true,
         include: ["src/**/*.{ts,tsx,js,jsx}"],
