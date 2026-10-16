@@ -17,10 +17,9 @@
     "jsx": "react-jsx",
     "types": ["vite/client", "jest", "@testing-library/jest-dom"],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/shared/*": ["./resources/examples/shared/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "tests", "resources/examples"],
+  "include": ["src", "tests"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
