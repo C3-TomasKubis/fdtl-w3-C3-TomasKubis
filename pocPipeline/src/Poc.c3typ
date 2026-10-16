@@ -16,5 +16,8 @@ entity type Poc schema name 'POC' {
    */
   stageVelocity: function(): [Poc.StageVelocity] js-server
 
+  /**
+   * Each POC's current stage, when it entered it and how many days it has been there.
+   */
   currentStages: function(): [Poc.CurrentStage] js-server
 }
