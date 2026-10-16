@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Grid, GridColumn, GridDetailRowProps } from '@progress/kendo-react-grid';
 import {
   Chart,
+  ChartArea,
   ChartCategoryAxis,
   ChartCategoryAxisItem,
   ChartSeries,
@@ -70,6 +71,7 @@ export default function PipelinePage() {
               Counts only POCs that have moved on from the stage; the number in brackets is how many.
             </p>
             <Chart style={{ height: 300 }}>
+              <ChartArea background="#ebebeb" />
               <ChartCategoryAxis>
                 <ChartCategoryAxisItem
                   categories={velocity.map((row) => `${STAGE_LABELS[row.stage]} (${row.pocCount})`)}
@@ -82,7 +84,7 @@ export default function PipelinePage() {
                 <ChartSeriesItem
                   type="column"
                   data={velocity.map((row) => row.avgDays)}
-                  labels={{ visible: true, format: '{0:n1}' }}
+                  labels={{ visible: true, format: '{0:n1}', background: 'transparent' }}
                 />
               </ChartSeries>
             </Chart>
