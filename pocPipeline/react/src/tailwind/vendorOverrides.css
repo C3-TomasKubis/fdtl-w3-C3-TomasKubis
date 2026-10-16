@@ -12,3 +12,12 @@
  *
  * Add third-party library tweaks here as needed.
  */
+
+/* Grid only: Kendo charts read theme colours once when drawn, so they would not follow the toggle. */
+.dark .k-grid {
+  --kendo-color-surface: var(--c3-style-colorBgCardParent);
+  --kendo-color-surface-alt: var(--c3-style-colorBgCardParent);
+  --kendo-color-on-app-surface: var(--c3-style-fontColor);
+  --kendo-color-subtle: var(--c3-style-secondaryFontColor);
+  --kendo-color-border: var(--c3-style-colorBorderWeak);
+}
