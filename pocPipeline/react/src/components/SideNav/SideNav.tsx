@@ -49,8 +49,8 @@ export default function SideNav() {
             return (
               <li
                 key={item.id}
-                className={`w-full h-10 flex items-center justify-center relative${
-                  isActive ? ' bg-secondary text-primary' : ' text-secondary'
+                className={`w-full h-10 flex items-center justify-center relative ${
+                  isActive ? 'bg-secondary text-primary' : 'text-secondary'
                 }`}
                 title={item.tooltip}
               >
