@@ -19,18 +19,7 @@ const UI_CONTENTS_PATH = "../ui/content";
 
 // Remove the previous contents from the '<pkg>/ui/content' folder
 if (fs.existsSync(UI_CONTENTS_PATH)) {
-  fs.rmSync(UI_CONTENTS_PATH, { recursive: true }, (err) => {
-    if (err) {
-      console.log(
-        "Failed to remove the previous assets from ",
-        UI_CONTENTS_PATH,
-        ": ",
-        err
-      );
-    } else {
-      console.log("Removed the previous assets from ", UI_CONTENTS_PATH, "");
-    }
-  });
+  fs.rmSync(UI_CONTENTS_PATH, { recursive: true });
 } else {
   // Create directory if it doesn't exist yet
   fs.mkdirSync(UI_CONTENTS_PATH, { recursive: true });
